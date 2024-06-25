@@ -11,11 +11,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     z-index: 999;
 }
 
-header > nav {
+.nav {
     height: 100%;
     width: 90%;
     display: flex;
@@ -24,7 +24,7 @@ header > nav {
     flex-direction: row;
 }
 
-header > nav > div {
+.nav > div {
     width: auto;
     display: flex;
     justify-content: space-between;
@@ -32,55 +32,55 @@ header > nav > div {
     flex-direction: row;
 }
 
-header > nav > div > img {
+.nav > div > img {
     height: 40px;
 }
 
-header > nav > div > li > a {
+.nav > div > li > a {
     display: none;
 }
 
-header > nav > label > ul {
+.menu-links {
     display: flex;
     align-items: center;
     flex-direction: row;
     width: auto;
 }
 
-header > nav > label > ul > li {
+.menu-links > li {
     margin: 0 20px 0 0;
 }
 
-header > nav > label > ul > li:last-of-type {
+.menu-links > li:last-of-type {
     margin-right: 0;
 }
 
-header > nav > label > ul > li > a {
+.menu-links > li > a {
     padding: 10px;
     background: linear-gradient(#000 0 0) bottom/0% 1px no-repeat;
     transition: 0.5s all;
 }
 
-header > nav > label > ul > li > a:hover {
+.menu-links > li > a:hover {
     background-size: 100% 1px;
 }
 
-header > nav > label > ul > li:last-of-type > a {
-    background: #292929;
+.menu-links > li:last-of-type > a {
+    background: #191919;
     border-radius: 5px;
     color: #fff;
 }
 
-header > nav > label > ul > li:last-of-type > a:hover {
-    background: #191919;
+.menu-links > li:last-of-type > a:hover {
+    background: #000;
     border-bottom: none;
 }
 
-.burger input {
+.nav-menu input {
     display: none;
 }
 
-.burger span {
+.nav-menu span {
     display: none;
     position: absolute;
     height: 4px;
@@ -92,35 +92,35 @@ header > nav > label > ul > li:last-of-type > a:hover {
     transform: rotate(0deg);
 }
 
-.burger span:nth-of-type(1) {
+.nav-menu span:nth-of-type(1) {
     top: 0px;
     transform-origin: left center;
 }
 
-.burger span:nth-of-type(2) {
+.nav-menu span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: left center;
 }
 
-.burger span:nth-of-type(3) {
+.nav-menu span:nth-of-type(3) {
     top: 100%;
     transform-origin: left center;
     transform: translateY(-100%);
 }
 
-.burger input:checked~span:nth-of-type(1) {
+.nav-menu input:checked~span:nth-of-type(1) {
     transform: rotate(45deg);
     top: -4px;
     left: 5px;
 }
 
-.burger input:checked~span:nth-of-type(2) {
+.nav-menu input:checked~span:nth-of-type(2) {
     width: 0%;
     opacity: 0;
 }
 
-.burger input:checked~span:nth-of-type(3) {
+.nav-menu input:checked~span:nth-of-type(3) {
     transform: rotate(-45deg);
     top: 24px;
     left: 5px;
