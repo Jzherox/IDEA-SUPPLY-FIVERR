@@ -1,0 +1,56 @@
+:root {
+   --header-h: 70px;
+}
+
+header {
+    background: #FFD34E;
+    position: fixed;
+    height: var(--header-h); width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+header > nav {
+    height: 100%; width: 90%;
+    display: flex;
+    justify-content: space-between; align-items: center;
+    flex-direction: row;
+}
+
+header > nav > img {
+    height: 60%;
+}
+
+header > nav > label > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header > nav > label > ul > li {
+    margin: 0 20px 0 0;
+}
+
+header > nav > label > ul > li:last-of-type {
+    margin-right: 0;
+}
+
+header > nav > label > ul > li > a {
+    padding: 10px;
+}
+
+header > nav > label > ul > li > a:hover {
+    border-bottom: 1px solid #000;
+}
+
+header > nav > label > ul > li:last-of-type > a {
+    background: #292929;
+    border-radius: 5px;
+    color: #fff;
+}
+
+header > nav > label > ul > li:last-of-type > a:hover {
+    background: #191919;
+    border-bottom: none;
+}
