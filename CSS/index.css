@@ -2,14 +2,14 @@
     border: 0; margin: 0; padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
-    
+    font-weight: 400;
     text-decoration: none;
     color: #000;
     list-style: none;
 }
 
 html {
-    scroll-margin-top: var(--header-h);
+    scroll-padding-top: var(--header-h);
     overflow-x: hidden;
 }
 
@@ -19,10 +19,47 @@ section {
     display: flex;
     justify-content: center; align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 section:nth-of-type(1) {
-    padding-top: 90px;
+    background-image: url(https://news.sap.com/latinamerica/files/2021/02/23/Untitled-design-49.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center var(--header-h);
+    background-color: #000;
+    padding: 0;
+}
+
+section:nth-of-type(1) > div {
+    padding: calc(20px + var(--header-h)) 10% 20px;
+    height: 100%; width: 100%;
+    background: #000000b7;
+    display: flex;
+    justify-content: space-between; align-items: center;
+    flex-direction: row;
+}
+
+section:nth-of-type(1) > div > div:nth-of-type(1) {
+    padding: 0 20% 0 0;
+}
+
+section:nth-of-type(1) > div > div:nth-of-type(1) h2 {
+    border-bottom: 1px solid #FFD34E;
+    color: #FFD34E;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+section:nth-of-type(1) > div > div:nth-of-type(1) h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+section:nth-of-type(1) > div > img {
+    border: 3px solid #fff;
+    /* box-shadow: 0 0 5px #FFD34E; */
 }
 
 section:nth-of-type(even) {
