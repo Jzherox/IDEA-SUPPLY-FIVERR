@@ -3,6 +3,10 @@
         height: var(--header-h);
     }
 
+    .menu-icons {
+        display: flex;
+    }
+
     .nav > div > li > a {
         display: block;
         padding: 10px;
@@ -34,18 +38,6 @@
     .nav > div {
         width: 100%;
         padding-right: 10px;
-    }
-
-    .nav-menu {
-        position: relative;
-        background: transparent;
-        cursor: pointer;
-        width: 40px;
-        height: 25px;
-      }
-
-    .nav-menu span {
-        display: block;
     }
 
     .menu-links > li:last-of-type {
