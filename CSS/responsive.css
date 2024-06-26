@@ -65,7 +65,7 @@
         top: var(--header-h); left: 0;
         background: #292929;
         height: auto; width: 100%;
-        padding: 10px 5%;
+        padding: 0 5%;
         border-bottom: 2px solid #000;
     }
 }
