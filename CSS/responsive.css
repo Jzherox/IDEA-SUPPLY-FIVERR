@@ -62,9 +62,13 @@
         flex-direction: column;
     }
 
-    section:last-of-type > div > iframe {
+    section:last-of-type > div > div:nth-of-type(2) {
         margin: 20px 0 0 0;
         width: 80%;
+    }
+
+    section:last-of-type > div > div:nth-of-type(2) > iframe {
+        height: 100%;
     }
 }
 
@@ -77,7 +81,7 @@
         width: 80%;
     }
 
-    section:last-of-type > div > iframe {
+    section:last-of-type > div > div:nth-of-type(2) {
         margin: 10px 0 0 0;
         width: 100%;
     }
