@@ -24,27 +24,24 @@ header {
     flex-direction: row;
 }
 
-.nav > div {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.nav > div > img {
+.nav-logo > img {
     height: 40px;
 }
 
-.nav > div > li > a {
-    display: none;
+.nav-menu {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-links {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: auto;
+    width: 100%;
 }
 
 .menu-links > li {
@@ -65,14 +62,22 @@ header {
     background-size: 100% 1px;
 }
 
-.menu-links > li:last-of-type > a {
-    background: #191919;
+.boton-contact, .boton-contact > li {
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.boton-contact > li > a {
+    padding: 10px;
+    background: #292929;
     border-radius: 5px;
     color: #fff;
 }
 
-.menu-links > li:last-of-type > a:hover {
-    background: #000;
+.boton-contact > li > a:hover {
+    background: #191919;
     border-bottom: none;
 }
 
@@ -81,9 +86,9 @@ header {
 }
 
 .menu-icons {
-    background: #191919;
+    background: #292929;
     padding: 8px;
-    height: 40px; width: 40px;
+    height: 100%; width: 44px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -100,7 +105,7 @@ header {
 }
 
 .nav-menu input:checked ~ .menu-icons {
-    background: #000;
+    background: #191919;
 }
 
 .nav-menu input:checked ~ .menu-icons > img:nth-of-type(1) {
@@ -109,4 +114,5 @@ header {
 
 .nav-menu input:checked ~ .menu-icons > img:nth-of-type(2) {
     display: flex;
+    width: 90%;
 }
