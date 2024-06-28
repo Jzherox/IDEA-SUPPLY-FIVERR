@@ -56,6 +56,16 @@
     section:nth-of-type(1) > div > img {
         width: 60%;
     }
+    
+    section:last-of-type > div {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section:last-of-type > div > iframe {
+        margin: 20px 0 0 0;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -65,5 +75,10 @@
 
     section:nth-of-type(1) > div > img {
         width: 80%;
+    }
+
+    section:last-of-type > div > iframe {
+        margin: 10px 0 0 0;
+        width: 100%;
     }
 }
