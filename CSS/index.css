@@ -47,6 +47,8 @@ section:nth-of-type(1) > div {
 
 section > div > h2 {
     font-weight: 900;
+    width: 100%;
+    text-align: center;
 }
 
 section:nth-of-type(1) > div > div {
@@ -64,6 +66,7 @@ section:nth-of-type(1) > div > div:nth-of-type(1) h2 {
 section:nth-of-type(1) > div > div:nth-of-type(1) h3 {
     color: #fff;
     font-size: 20px;
+    text-shadow: 0 0 2px #FFD34E;
 }
 
 section:nth-of-type(1) > div > img {
@@ -73,6 +76,50 @@ section:nth-of-type(1) > div > img {
 
 section:nth-of-type(even) {
     background: #f4f4f4;
+}
+
+section:nth-of-type(4) > div > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-of-type(4) > div > div > div {
+    background: #fff;
+    height: 250px; width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 0 5px #3939391d;
+}
+
+/* section:nth-of-type(4) > div > div > div:hover {
+    ...
+} */
+
+section:nth-of-type(4) > div > div > div > div > h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+section:nth-of-type(4) > div > div > div > div > p {
+    text-align: center;
+}
+
+section:nth-of-type(4) > div > div > div > i {
+    color: #292929;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 section:last-of-type {
