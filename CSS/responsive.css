@@ -43,6 +43,17 @@
 }
 
 @media screen and (max-width: 890px) {
+    section:nth-of-type(5) > div > div > div {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section:nth-of-type(5) > div > div > div > div {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
     section:nth-of-type(4) > div > div > div {
         height: auto; width: 100%;
         margin: 10px 0;
@@ -80,10 +91,6 @@
 
     section:nth-of-type(1) > div > img {
         width: 60%;
-    }
-
-    section:nth-of-type(5) > div > div > p {
-        text-align: justify;
     }
     
     section:last-of-type > div > div > div {

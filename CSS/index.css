@@ -59,6 +59,10 @@ section > div > h2 {
     box-shadow: 0 0 5px #3939395d;
 }
 
+section > div > p {
+    text-align: center;
+}
+
 section:nth-of-type(1) > div > div {
     width: 40%;
 }
@@ -108,10 +112,6 @@ section:nth-of-type(4) > div > div > div {
     box-shadow: 0 0 5px #3939391d;
 }
 
-/* section:nth-of-type(4) > div > div > div:hover {
-    ...
-} */
-
 section:nth-of-type(4) > div > div > div > div > h3 {
     font-weight: 600;
     margin-bottom: 10px;
@@ -131,10 +131,47 @@ section:nth-of-type(4) > div > div > div > i {
     margin-bottom: 10px;
 }
 
+section:nth-of-type(5) > div > div {
+    width: 100%;
+}
+
 section:nth-of-type(5) > div > div > h3 {
     font-weight: 500;
     padding: 10px 0;
     border-bottom: 2px solid #000;
+}
+
+section:nth-of-type(5) > div > div > div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+section:nth-of-type(5) > div > div:last-of-type > div {
+    flex-direction: column;
+}
+
+section:nth-of-type(5) > div> div:last-of-type > div > img {
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+}
+
+section:nth-of-type(5) > div > div > div > p {
+    width: 100%;
+}
+
+section:nth-of-type(5) > div > div > div > div {
+    width: 500px;
+    margin-left: 20px;
+}
+
+section:nth-of-type(5) > div > div > div > div > img {
+    width: 100%;
+}
+
+section:nth-of-type(5) > div > div > div > p {
+    text-align: justify;
 }
 
 section:last-of-type {
