@@ -109,10 +109,6 @@ section:nth-of-type(4) > div > div > div {
     align-items: center;
 }
 
-section:nth-of-type(4) > div > div > div:last-of-type {
-    margin-bottom: 0;
-}
-
 section:nth-of-type(4) > div > div > div > i {
     font-size: 40px;
     margin-bottom: 10px;
