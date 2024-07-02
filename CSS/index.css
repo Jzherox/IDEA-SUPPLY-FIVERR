@@ -77,6 +77,7 @@ section:nth-of-type(1) > div > div:nth-of-type(1) h2 {
 }
 
 section:nth-of-type(1) > div > div:nth-of-type(1) h3 {
+    margin: 10px 0 0 0;
     color: #fff;
     font-size: 20px;
     text-shadow: 0 0 2px #FFD34E;
@@ -151,14 +152,9 @@ section:nth-of-type(5) > div > div:last-of-type > div {
     flex-direction: column;
 }
 
-section:nth-of-type(5) > div> div:last-of-type > div > img {
-    justify-content: start;
-    align-items: start;
-    flex-direction: row;
-}
-
 section:nth-of-type(5) > div > div > div > p {
     width: 100%;
+    text-align: justify;
 }
 
 section:nth-of-type(5) > div > div > div > div {
@@ -167,11 +163,24 @@ section:nth-of-type(5) > div > div > div > div {
 }
 
 section:nth-of-type(5) > div > div > div > div > img {
+    box-shadow: 0 0 5px #191919;
     width: 100%;
 }
 
-section:nth-of-type(5) > div > div > div > p {
-    text-align: justify;
+section:nth-of-type(5) > div > div:last-of-type > div > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+section:nth-of-type(5) > div > div:last-of-type > div > div > img {
+    margin: 10px 10px 0 0;
+    width: 200px;
+}
+
+section:nth-of-type(5) > div > div:last-of-type > div > div:last-of-type {
+    margin-right: 0;
 }
 
 section:last-of-type {

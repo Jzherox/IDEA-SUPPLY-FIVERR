@@ -43,6 +43,15 @@
 }
 
 @media screen and (max-width: 890px) {
+    section:nth-of-type(5) > div > div:last-of-type > div > div {
+        flex-wrap: wrap;
+        
+    }
+
+    section:nth-of-type(5) > div > div:last-of-type > div > div > img {
+        width: 40%;
+    }
+
     section:nth-of-type(5) > div > div > div {
         margin-top: 10px;
         display: flex;
