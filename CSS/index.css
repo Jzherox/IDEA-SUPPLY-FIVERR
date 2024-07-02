@@ -284,17 +284,15 @@ footer div {
 
 footer div img {
     height: 40px;
-    filter: invert(200%)
-    opacity(50)
-}
-
-footer div h3, footer div h4 {
-    color: #bfbfbf;
-    margin: 0;
-    padding: 0;
-    border: 0;
+    filter: invert(200%);
+    opacity: 50%;
 }
 
 footer div h4 {
+    font-size: 14px;
+    color: #e9e7e778;
+    margin: 0;
+    padding: 0;
+    border: 0;
     font-weight: bolder;
 }
