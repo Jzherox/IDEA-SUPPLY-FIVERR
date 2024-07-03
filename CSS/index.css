@@ -15,6 +15,10 @@ html {
     overflow-x: hidden;
 }
 
+p {
+    line-height: 23px; 
+}
+
 section {
     padding: 40px 20px 10px 20px;
     display: flex;
@@ -135,64 +139,32 @@ section:nth-of-type(5) > div > div {
     box-shadow: 0 0 5px #3939391c;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
 }
 
-section:nth-of-type(5) > div > p {
-    margin: 5px 0 0 0;
-}
-
-section:nth-of-type(5) > div > div > h3 {
-    padding: 0 0 5px 0;
-    font-weight: 500;
-    border-bottom: 2px solid #000;
+section:nth-of-type(5) > div > div > img {
+    aspect-ratio: 1/1;
+    height: 240px;
+    box-shadow: 0 0 5px #0000005b;
+    border-radius: 10px;
 }
 
 section:nth-of-type(5) > div > div > div {
-    margin-top: 12px;
-    display: flex;
-}
-
-section:nth-of-type(5) > div > div:last-of-type > div {
     flex-direction: column;
-}
-
-section:nth-of-type(5) > div > div > div > p {
-    width: 100%;
-    text-align: justify;
-}
-
-section:nth-of-type(5) > div > div > div > div {
-    width: 500px;
+    justify-content: start;
+    align-items: start;
     margin: 0 0 0 20px;
 }
 
-section:nth-of-type(5) > div > div:last-of-type > div > div {
-    width: 500px;
-    margin: 20px 0 0 0;
-}
-
-section:nth-of-type(5) > div > div > div > div > img {
+section:nth-of-type(5) > div > div > div > h3 {
+    border-bottom: 2px solid #000;
     width: 100%;
-    box-shadow: 0 0 5px #1919198e;
-}
-
-section:nth-of-type(5) > div > div:last-of-type > div > div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-section:nth-of-type(5) > div > div:last-of-type > div > div:last-of-type {
-    margin-left: 0;
-}
-
-section:nth-of-type(5) > div > div:last-of-type > div > div > img {
-    width: 200px;
-    margin: 0 10px 0 0;
-}
-
-section:nth-of-type(5) > div > div:last-of-type > div > div > img:last-of-type {
-    margin: 0;
+    padding: 0 0 5px 0;
+    margin: 0 0 5px 0;
+    font-weight: 500;
 }
 
 section:last-of-type {
@@ -281,7 +253,7 @@ footer div {
 footer div img {
     height: 40px;
     filter: invert(200%);
-    opacity: 50%;
+    opacity: 40%;
 }
 
 footer div h4 {
