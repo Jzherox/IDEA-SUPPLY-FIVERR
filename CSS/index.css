@@ -1,7 +1,6 @@
+/* AJUSTES GLOBALES */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin: 0; padding: 0; border: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
@@ -19,20 +18,15 @@ p {
     line-height: 23px; 
 }
 
+/* SECCIONES */
 section {
-    padding: 40px 20px 10px 20px;
+    padding: 30px 20px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
     background: #f6f6f6;
-}
-
-section:nth-of-type(1) {
-    height: 100vh;
-    padding: 0;
-    background: #000 url(https://news.sap.com/latinamerica/files/2021/02/23/Untitled-design-49.png) center var(--header-h) / cover no-repeat;
 }
 
 section > div {
@@ -42,15 +36,6 @@ section > div {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-section:nth-of-type(1) > div {
-    width: 100%;
-    height: 100%;
-    padding: calc(20px + var(--header-h)) 10% 20px;
-    background: #000000b8;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
 section > div > h2 {
@@ -63,6 +48,22 @@ section > div > h2 {
 section > div > p {
     margin: 10px 0 0 0;
     text-align: center;
+}
+
+/* SECCION PRINCIPAL */
+section:nth-of-type(1) {
+    height: 100vh;
+    padding: 0;
+    background: #000 url(https://news.sap.com/latinamerica/files/2021/02/23/Untitled-design-49.png) center var(--header-h) / cover no-repeat;
+}
+
+section:nth-of-type(1) > div {
+    width: 100%;
+    height: 100%;
+    padding: calc(20px + var(--header-h)) 10% 20px;
+    background: #000000b8;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 section:nth-of-type(1) > div > div {
@@ -89,6 +90,41 @@ section:nth-of-type(1) > div > img {
     border: 3px solid #fff;
 }
 
+/* SECCION SOBRE NOSOTROS */
+section:nth-of-type(2) {
+    height: 28vh;
+}
+
+section:nth-of-type(2) > div {
+    height: auto;
+    display: flex;
+    background: #ffd34e;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: row;
+    position: absolute;
+    top: 98vh;
+    border: 3px solid #191919;
+}
+
+section:nth-of-type(2) > div > img {
+    margin: 0 20px 0 0;
+    padding: 0 10px 0 0;
+    border-right: 1px solid #191919;
+    height: 150px;
+}
+
+section:nth-of-type(2) > div > div > h2 {
+    width: 100%;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+section:nth-of-type(2) > div > div > p {
+    text-align: justify;
+}
+
+/* SECCION DE VALORES */
 section:nth-of-type(4) > div {
     width: 80%;
 }
@@ -116,7 +152,6 @@ section:nth-of-type(4) > div > div > div {
 section:nth-of-type(4) > div > div > div > i {
     font-size: 40px;
     margin-bottom: 10px;
-    color: #292929;
 }
 
 section:nth-of-type(4) > div > div > div > div > h3 {
@@ -132,6 +167,7 @@ section:nth-of-type(4) > div > div > div > div > p {
     text-align: center;
 }
 
+/* SECCION DE PRODUCTOS Y SERVICIOS */
 section:nth-of-type(5) > div > div {
     width: 100%;
     margin: 20px 0 0 0;
@@ -159,16 +195,25 @@ section:nth-of-type(5) > div > div > div {
     margin: 0 0 0 20px;
 }
 
+section:nth-of-type(5) > div > div > div > img {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 section:nth-of-type(5) > div > div > div > h3 {
     border-bottom: 2px solid #000;
     width: 100%;
-    padding: 0 0 5px 0;
-    margin: 0 0 5px 0;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
     font-weight: 500;
 }
 
+/* SECCION FOOTER */
 section:last-of-type {
     padding: 0;
+    background: #191919;
 }
 
 section:last-of-type > div > div {
@@ -178,17 +223,18 @@ section:last-of-type > div > div {
     align-items: center;
 }
 
-section:last-of-type > div > div > div {
-    width: 100%;
-    padding-top: 10px;
-    display: flex;
-}
-
 section:last-of-type > div > div:nth-of-type(1) > h2 {
     width: 100%;
     padding: 5px 0;
     font-weight: 900;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #f6f6f692;;
+    color: #f6f6f692;
+}
+
+section:last-of-type > div > div > div {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
 }
 
 section:last-of-type > div > div > div > div:nth-of-type(1) {
@@ -199,10 +245,16 @@ section:last-of-type > div > div > div > div:nth-of-type(1) {
 
 section:last-of-type > div > div > div > div:nth-of-type(1) > p {
     margin-bottom: 10px;
+    color: #f6f6f692;
 }
 
 section:last-of-type > div > div > div > div:nth-of-type(1) > p:last-of-type {
     margin-bottom: 0;
+}
+
+section:last-of-type > div > div > div > div:nth-of-type(1) > p > i {
+    margin-bottom: 10px;
+    color: #f6f6f692;
 }
 
 section:last-of-type > div > div > div > div:nth-of-type(2) {
@@ -210,12 +262,14 @@ section:last-of-type > div > div > div > div:nth-of-type(2) {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
+    border: 3px solid #9d9d9d;
+
 }
 
 section:last-of-type > div > div > div > div:nth-of-type(2) > iframe {
     width: 100%;
     height: 100%;
-    border: 2px solid #000;
+    filter: invert(80%) contrast(100%);
 }
 
 section:last-of-type > div > div > div > div:nth-of-type(2) > a {
@@ -223,7 +277,6 @@ section:last-of-type > div > div > div > div:nth-of-type(2) > a {
     padding: 10px;
     text-align: center;
     background: #ffd34e;
-    border: 2px solid #000;
     border-top: 0;
 }
 
@@ -231,6 +284,7 @@ section:last-of-type > div > div > div > div:nth-of-type(2) > a:hover {
     background: #ffc516;
 }
 
+/* PIE DE PAGINA */
 footer {
     height: 70px; width: 100%;
     background: #101010;
@@ -252,7 +306,7 @@ footer div {
 
 footer div img {
     height: 40px;
-    filter: invert(200%);
+    filter: invert(100%);
     opacity: 40%;
 }
 
