@@ -55,16 +55,18 @@
 }
 
 @media screen and (max-width: 900px) {
-    section:nth-of-type(2) {
-        height: 56vh;
-    }
-
-    section:nth-of-type(2) > div {
+    section:nth-of-type(2) > div > div {
         flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
 
     section:nth-of-type(2) > div > img {
         display: none;
+    }
+
+    section:nth-of-type(2) > div > div {
+        border: none;
     }
 
     section:nth-of-type(2) > div > div > h2 {
@@ -156,6 +158,10 @@
 }
 
 @media screen and (max-width: 650px) {
+    section:nth-of-type(2) > div {
+        height: auto;
+    }
+
     .nav-menu input:checked ~ .menu-links {
         flex-direction: column;
     }
@@ -171,5 +177,11 @@
 
     footer div h4 {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    section:nth-of-type(2) {
+        height: 250px;
     }
 }
