@@ -54,7 +54,7 @@ section > div > p {
 section:nth-of-type(1) {
     height: 100vh;
     padding: 0;
-    background: #000 url(https://news.sap.com/latinamerica/files/2021/02/23/Untitled-design-49.png) center var(--header-h) / cover no-repeat;
+    background: #000 url(../resources/IMG/home-fondo.jpg) center var(--header-h) / cover no-repeat;
 }
 
 section:nth-of-type(1) > div {
